@@ -31,6 +31,7 @@
 		429A060D223471E300809644 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 429A05FB223471E300809644 /* Montserrat-LightItalic.ttf */; };
 		429A060E223471E300809644 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 429A05FC223471E300809644 /* Montserrat-MediumItalic.ttf */; };
 		429A060F223471E400809644 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 429A05FD223471E300809644 /* Montserrat-Thin.ttf */; };
+		429A065F22349A3800809644 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429A065E22349A3800809644 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		429A05FB223471E300809644 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		429A05FC223471E300809644 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
 		429A05FD223471E300809644 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		429A065E22349A3800809644 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,6 @@
 				429A05E722346FF600809644 /* Extensions */,
 				429A05E622346FE100809644 /* Resources */,
 				429A05D222343E0B00809644 /* AppDelegate.swift */,
-				429A05D422343E0B00809644 /* FirstViewController.swift */,
-				429A05D622343E0B00809644 /* SecondViewController.swift */,
 				429A05D822343E0B00809644 /* Main.storyboard */,
 				429A05DB22343E0D00809644 /* Assets.xcassets */,
 				429A05DD22343E0D00809644 /* LaunchScreen.storyboard */,
@@ -151,6 +151,9 @@
 		429A05E92234701100809644 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				429A05D422343E0B00809644 /* FirstViewController.swift */,
+				429A05D622343E0B00809644 /* SecondViewController.swift */,
+				429A065E22349A3800809644 /* ThirdViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				429A05D722343E0B00809644 /* SecondViewController.swift in Sources */,
 				429A05D322343E0B00809644 /* AppDelegate.swift in Sources */,
+				429A065F22349A3800809644 /* ThirdViewController.swift in Sources */,
 				429A05D522343E0B00809644 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
