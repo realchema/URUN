@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4227CBE32268F88500602F26 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227CBE22268F88500602F26 /* LocationVC.swift */; };
+		428A3A6D226B5E7F001F6DB7 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A3A6C226B5E7F001F6DB7 /* CurrentRunVC.swift */; };
 		429A05D322343E0B00809644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429A05D222343E0B00809644 /* AppDelegate.swift */; };
 		429A05D522343E0B00809644 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429A05D422343E0B00809644 /* BeginRunVC.swift */; };
 		429A05D722343E0B00809644 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429A05D622343E0B00809644 /* SecondViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		4227CBE22268F88500602F26 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		428A3A6C226B5E7F001F6DB7 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 		429A05CF22343E0B00809644 /* URUN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URUN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429A05D222343E0B00809644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		429A05D422343E0B00809644 /* BeginRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginRunVC.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				429A05D622343E0B00809644 /* SecondViewController.swift */,
 				429A065E22349A3800809644 /* ThirdViewController.swift */,
 				4227CBE22268F88500602F26 /* LocationVC.swift */,
+				428A3A6C226B5E7F001F6DB7 /* CurrentRunVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				429A05D722343E0B00809644 /* SecondViewController.swift in Sources */,
 				429A05D322343E0B00809644 /* AppDelegate.swift in Sources */,
 				429A065F22349A3800809644 /* ThirdViewController.swift in Sources */,
+				428A3A6D226B5E7F001F6DB7 /* CurrentRunVC.swift in Sources */,
 				429A05D522343E0B00809644 /* BeginRunVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

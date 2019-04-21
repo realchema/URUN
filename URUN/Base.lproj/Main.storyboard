@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Runing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="oCR-zp-q2F">
-                                <rect key="frame" x="154.5" y="585.5" width="66.5" height="16.5"/>
+                                <rect key="frame" x="154" y="585.5" width="67" height="16.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Current RunVC-->
         <scene sceneID="kjU-05-kxt">
             <objects>
-                <viewController id="kpW-oX-ynH" customClass="ThirdViewController" customModule="URUN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kpW-oX-ynH" customClass="CurrentRunVC" customModule="URUN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="04p-g9-IPT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,16 +165,19 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qya-Su-r6X">
                                 <rect key="frame" x="256" y="552" width="75" height="75"/>
                                 <state key="normal" image="pauseButton"/>
+                                <connections>
+                                    <action selector="pauseBtnPressed:" destination="kpW-oX-ynH" eventType="touchUpInside" id="5vw-Bq-zcr"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="oiA-pz-lZn">
-                                <rect key="frame" x="55" y="561" width="57" height="57"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END RUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Af9-B7-QrN">
                                 <rect key="frame" x="139" y="576" width="89" height="27.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="oiA-pz-lZn">
+                                <rect key="frame" x="55" y="561" width="57" height="57"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -191,6 +194,7 @@
                             <constraint firstItem="vsg-Mz-nQv" firstAttribute="top" secondItem="04p-g9-IPT" secondAttribute="top" id="TYd-3B-H6V"/>
                             <constraint firstItem="9S0-TY-FWF" firstAttribute="centerX" secondItem="04p-g9-IPT" secondAttribute="centerX" id="TZV-8a-s7F"/>
                             <constraint firstItem="Af9-B7-QrN" firstAttribute="centerY" secondItem="Zt8-c7-rOv" secondAttribute="centerY" id="aEr-KY-nUb"/>
+                            <constraint firstItem="vsg-Mz-nQv" firstAttribute="bottom" secondItem="Ftm-DV-ZKP" secondAttribute="bottom" id="bEv-3k-a6a"/>
                             <constraint firstItem="Ftm-DV-ZKP" firstAttribute="bottom" secondItem="Zt8-c7-rOv" secondAttribute="bottom" constant="40" id="cGi-1L-gaQ"/>
                             <constraint firstItem="Af9-B7-QrN" firstAttribute="centerX" secondItem="Zt8-c7-rOv" secondAttribute="centerX" constant="21" id="dmr-DR-QrG"/>
                             <constraint firstItem="vsg-Mz-nQv" firstAttribute="leading" secondItem="Ftm-DV-ZKP" secondAttribute="leading" id="eOb-Z3-6eh"/>
@@ -205,6 +209,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ftm-DV-ZKP"/>
                     </view>
+                    <connections>
+                        <outlet property="distanceLbl" destination="8gw-zs-1iA" id="QwB-CI-5MO"/>
+                        <outlet property="durationLbl" destination="23s-DR-KJX" id="oFH-Nk-McJ"/>
+                        <outlet property="paceLbl" destination="fOi-qC-AfD" id="IXU-Uf-4Dq"/>
+                        <outlet property="pauseBtn" destination="qya-Su-r6X" id="U10-Ik-RGo"/>
+                        <outlet property="sliderImageView" destination="oiA-pz-lZn" id="YWJ-Rf-2pB"/>
+                        <outlet property="swipeBGImageView" destination="Zt8-c7-rOv" id="bpd-mr-j3n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HhM-qH-1gU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,17 +252,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xou-Ca-6DS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06/15/19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tV6-Pw-WbJ">
-                                                    <rect key="frame" x="292.5" y="27" width="59.5" height="19.5"/>
+                                                    <rect key="frame" x="331.5" y="27" width="59.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pij-sJ-u5K">
-                                                    <rect key="frame" x="158.5" y="14.5" width="58.5" height="44"/>
+                                                    <rect key="frame" x="178" y="14.5" width="58.5" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej3-cs-YMT">
                                                             <rect key="frame" x="0.0" y="0.0" width="58.5" height="27.5"/>
