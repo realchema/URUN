@@ -20,6 +20,7 @@ class BeginRunVC: LocationVC {
         
         checkLocationAuthStatus()
         mapView.delegate = self
+        print("here are my runs: \(String(describing: Run.getAllRuns()))")
         
     }
     

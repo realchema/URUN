@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C306756B4BE5CF7D5CE9B41 /* Pods_URUN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9F30A0BECDD3F4EC4CFE4A /* Pods_URUN.framework */; };
+		4205930E226E2F7A00438001 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205930D226E2F7A00438001 /* Run.swift */; };
+		42059310226E364D00438001 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205930F226E364D00438001 /* Person.swift */; };
+		42059312226E3FE800438001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42059311226E3FE800438001 /* Constants.swift */; };
 		4227CBE32268F88500602F26 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227CBE22268F88500602F26 /* LocationVC.swift */; };
 		428A3A6D226B5E7F001F6DB7 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A3A6C226B5E7F001F6DB7 /* CurrentRunVC.swift */; };
 		428A3A6F226C175C001F6DB7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A3A6E226C175C001F6DB7 /* Extensions.swift */; };
@@ -38,6 +42,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4205930D226E2F7A00438001 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		4205930F226E364D00438001 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		42059311226E3FE800438001 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4227CBE22268F88500602F26 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		428A3A6C226B5E7F001F6DB7 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 		428A3A6E226C175C001F6DB7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -68,6 +75,9 @@
 		429A05FC223471E300809644 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
 		429A05FD223471E300809644 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
 		429A065E22349A3800809644 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		4B9F30A0BECDD3F4EC4CFE4A /* Pods_URUN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URUN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96344F69E27CED4F5BB3867 /* Pods-URUN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URUN.release.xcconfig"; path = "Target Support Files/Pods-URUN/Pods-URUN.release.xcconfig"; sourceTree = "<group>"; };
+		DF0AF4091E75A5AB88C7EB05 /* Pods-URUN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URUN.debug.xcconfig"; path = "Target Support Files/Pods-URUN/Pods-URUN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C306756B4BE5CF7D5CE9B41 /* Pods_URUN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +97,8 @@
 			children = (
 				429A05D122343E0B00809644 /* URUN */,
 				429A05D022343E0B00809644 /* Products */,
+				DB95620735B961EDF44C7D13 /* Pods */,
+				524CF554D07F89BBB2A6D466 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +164,7 @@
 		429A05E82234700400809644 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				42059311226E3FE800438001 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -177,8 +191,27 @@
 		429A05EB2234702100809644 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4205930D226E2F7A00438001 /* Run.swift */,
+				4205930F226E364D00438001 /* Person.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		524CF554D07F89BBB2A6D466 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B9F30A0BECDD3F4EC4CFE4A /* Pods_URUN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB95620735B961EDF44C7D13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF0AF4091E75A5AB88C7EB05 /* Pods-URUN.debug.xcconfig */,
+				D96344F69E27CED4F5BB3867 /* Pods-URUN.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 429A05E322343E0D00809644 /* Build configuration list for PBXNativeTarget "URUN" */;
 			buildPhases = (
+				F440BBA94796F5A60D0EF50D /* [CP] Check Pods Manifest.lock */,
 				429A05CB22343E0B00809644 /* Sources */,
 				429A05CC22343E0B00809644 /* Frameworks */,
 				429A05CD22343E0B00809644 /* Resources */,
+				D14959236A8630E4D32F0791 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,16 +300,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D14959236A8630E4D32F0791 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-URUN/Pods-URUN-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-URUN/Pods-URUN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F440BBA94796F5A60D0EF50D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-URUN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		429A05CB22343E0B00809644 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4227CBE32268F88500602F26 /* LocationVC.swift in Sources */,
+				4205930E226E2F7A00438001 /* Run.swift in Sources */,
 				429A05D722343E0B00809644 /* SecondViewController.swift in Sources */,
 				429A05D322343E0B00809644 /* AppDelegate.swift in Sources */,
 				429A065F22349A3800809644 /* ThirdViewController.swift in Sources */,
+				42059312226E3FE800438001 /* Constants.swift in Sources */,
 				428A3A6D226B5E7F001F6DB7 /* CurrentRunVC.swift in Sources */,
+				42059310226E364D00438001 /* Person.swift in Sources */,
 				429A05D522343E0B00809644 /* BeginRunVC.swift in Sources */,
 				428A3A6F226C175C001F6DB7 /* Extensions.swift in Sources */,
 			);
@@ -420,6 +507,7 @@
 		};
 		429A05E422343E0D00809644 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF0AF4091E75A5AB88C7EB05 /* Pods-URUN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +526,7 @@
 		};
 		429A05E522343E0D00809644 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96344F69E27CED4F5BB3867 /* Pods-URUN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
