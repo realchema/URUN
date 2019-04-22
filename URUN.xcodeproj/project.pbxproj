@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		0C306756B4BE5CF7D5CE9B41 /* Pods_URUN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9F30A0BECDD3F4EC4CFE4A /* Pods_URUN.framework */; };
 		4205930E226E2F7A00438001 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205930D226E2F7A00438001 /* Run.swift */; };
-		42059310226E364D00438001 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205930F226E364D00438001 /* Person.swift */; };
 		42059312226E3FE800438001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42059311226E3FE800438001 /* Constants.swift */; };
 		42059314226E453500438001 /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42059313226E453500438001 /* RunLogCell.swift */; };
+		42059316226E5F7A00438001 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42059315226E5F7A00438001 /* Location.swift */; };
+		42059318226E6B9A00438001 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42059317226E6B9A00438001 /* RealmConfig.swift */; };
 		4227CBE32268F88500602F26 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227CBE22268F88500602F26 /* LocationVC.swift */; };
 		428A3A6D226B5E7F001F6DB7 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A3A6C226B5E7F001F6DB7 /* CurrentRunVC.swift */; };
 		428A3A6F226C175C001F6DB7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A3A6E226C175C001F6DB7 /* Extensions.swift */; };
@@ -44,9 +45,10 @@
 
 /* Begin PBXFileReference section */
 		4205930D226E2F7A00438001 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
-		4205930F226E364D00438001 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		42059311226E3FE800438001 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		42059313226E453500438001 /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
+		42059315226E5F7A00438001 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		42059317226E6B9A00438001 /* RealmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		4227CBE22268F88500602F26 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		428A3A6C226B5E7F001F6DB7 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 		428A3A6E226C175C001F6DB7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				42059311226E3FE800438001 /* Constants.swift */,
+				42059317226E6B9A00438001 /* RealmConfig.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -195,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				4205930D226E2F7A00438001 /* Run.swift */,
-				4205930F226E364D00438001 /* Person.swift */,
+				42059315226E5F7A00438001 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4227CBE32268F88500602F26 /* LocationVC.swift in Sources */,
+				42059316226E5F7A00438001 /* Location.swift in Sources */,
 				4205930E226E2F7A00438001 /* Run.swift in Sources */,
 				429A05D722343E0B00809644 /* RunLogVC.swift in Sources */,
 				429A05D322343E0B00809644 /* AppDelegate.swift in Sources */,
@@ -365,9 +369,9 @@
 				42059312226E3FE800438001 /* Constants.swift in Sources */,
 				42059314226E453500438001 /* RunLogCell.swift in Sources */,
 				428A3A6D226B5E7F001F6DB7 /* CurrentRunVC.swift in Sources */,
-				42059310226E364D00438001 /* Person.swift in Sources */,
 				429A05D522343E0B00809644 /* BeginRunVC.swift in Sources */,
 				428A3A6F226C175C001F6DB7 /* Extensions.swift in Sources */,
+				42059318226E6B9A00438001 /* RealmConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
